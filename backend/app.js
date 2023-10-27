@@ -28,7 +28,6 @@ app.use((error, req, res, next) => {
 });
 
 mongoose
-  // .connect(`mongodb+srv://ben:Ben3479@cluster0.a4r2ddg.mongodb.net/`)
   .connect(
     `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@${process.env.MONGO_CLUSTER}.mongodb.net/`
   )
